@@ -1,67 +1,33 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cypress Discovery</title>
 </head>
+
 <body>
-    <!-- <h1>Olá, <span  id= "nome"></span></h1>     -->
-     <h1>CNH</h1>
+
+    <h1>CNH</h1>
 
 
-     <input type="text" name="nome" placeholder="Seu primeiro nome"/>
-     <input type="number" name="idade" placeholder="Sua idade"/>
-     <button type="button" onclick="verificarIdade()">Verificar Idade</button>
+    <input type="text" name="nome" placeholder="Seu primeiro nome" />
+    <input type="number" name="idade" placeholder="Sua idade" />
+    <button type="button" onclick="verificarIdade()">Verificar Idade</button>
 
-<script type="text/javascript">
+    <h1>Vingadores</h1>
 
-     function verificarIdade() {
+    <button type = "button" onclick="listarVingadores()">Listar Vingadores</button>
 
-         var nome = document.querySelector('input[name=nome]')
-         var idade = document.querySelector('input[name=idade]')
+    <ul id = "avengers"> </ul>
 
-         var idadeNum = parseInt(idade.value)
-
-         
-          if (idadeNum >=18 ){
-               alert('Você está apto para tirar sua CNH')}
-
-               else if(idadeNum > 4){
-                   alert('Você é menor de idade, por enquanto vá de bike')}
-
-                   else{
-                       alert('Melhor ir de veletrol')
-                   }
-
-               
-
-    
+    <script type="text/javascript" src="js/cnh.js"></script>
+    <script type="text/javascript" src="js/avengers.js"></script>
 
 
-          }
-       
 
-     
-
-    
-
-    
-        // var nome = prompt("Qual o seu nome?");
-        // var recebeIdade = prompt("Informe sua idade.");
-
-        // var idade = parseInt(recebeIdade);
-        
-        // console.log(nome);
-        // console.log(typeof nome);
-
-        // console.log(idade);
-        // console.log(typeof idade);
-
-        
-    
-        //    document.getElementById("nome").innerText = nome;
-    </script>
 
 </body>
+
 </html>
