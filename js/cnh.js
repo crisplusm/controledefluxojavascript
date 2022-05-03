@@ -3,6 +3,13 @@ function verificarIdade() {
     var nome = document.querySelector('input[name=nome]')
     var idade = document.querySelector('input[name=idade]')
 
+    
+   if(idade.value.length == 0){
+       alert('Idade é um campo obrigatório.')
+       return
+   }
+   
+   
     var idadeNum = parseInt(idade.value)
 
 
